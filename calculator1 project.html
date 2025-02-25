@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Calculator</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="display" class="form-control text-right" disabled>
+                <div class="buttons mt-3">
+                    <button class="btn btn-danger" id="clear">AC</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('*')">*</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('3')">3</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('-')">-</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('%')">%</button>
+                    <button class="btn btn-secondary" onclick="calculateSquare()">x²</button>
+                    <button class="btn btn-secondary" onclick="appendToDisplay('+')">+</button>
+                    <button class="btn btn-primary" id="equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
